@@ -1,0 +1,23 @@
+
+.content_area {
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.content {
+    width:calc(100%/4);
+    border:solid 1px black;
+}
+
+
+
+/* mediaクエリを使うことで画面幅が特定サイズ以下の場合の装飾を指定できる。 
+   これを使うことで、レスポンシブデザインが再現できる。
+ */    
+@media (max-width:800px){
+
+    .content{
+        width:100%;
+    }
+}
+
